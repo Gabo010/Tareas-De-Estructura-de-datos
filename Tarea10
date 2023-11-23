@@ -9,15 +9,15 @@ diccionarioA["perro"] = "Moose"
 claves = list(diccionarioB.keys())
 valores = []
 for c in claves:
-valores.append(diccionarioB[c])
+    valores.append(diccionarioB[c])
 #Eliminar datos
 A = diccionarioB.pop("hola")
 diccionarioA.clear()
 #Función de hash
 def myHash(clave):
-if type(clave) == int:
-return clave
-elif type(clave) == str:
+    if type(clave) == int:
+    return clave
+    elif type(clave) == str:
 num = 0
 for e in clave:
 num += ord(e)
